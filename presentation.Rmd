@@ -1,0 +1,56 @@
+---
+title: "4 most commom distributions"
+author: "Maksym Tulyuk"
+date: "27 September 2015"
+output: slidy_presentation
+---
+
+## 4 most common distributions
+
+This presentation shows 4 most common distributions
+
+- Binary
+- Normal
+- Poisson
+- Uniform
+
+## Binary distribution
+
+```{r}
+distribution <- rbinom(n = 100, size = 1, prob = 0.5)
+```
+```{r, echo=FALSE}
+hist(distribution, main = "Histogram")
+```
+
+## Normal distribution
+
+```{r}
+distribution <- rnorm(n = 100, mean = 0, sd = 1)
+```
+```{r, echo=FALSE}
+hist(distribution, main = "Histogram")
+```
+
+## Poisson distribution
+
+```{r}
+distribution <- rpois(n = 100, lambda = 1)
+```
+```{r, echo=FALSE}
+hist(distribution, main = "Histogram")
+```
+
+## Uniform distribution
+
+```{r}
+distribution <- runif(n = 100, min = 0, max = 1)
+```
+```{r, echo=FALSE}
+hist(distribution, main = "Histogram")
+```
+
+## Interactivity
+
+To play more with the ditribution go here:
+https://maksymtulyuk.shinyapps.io/DevelopDataProductAssignment
